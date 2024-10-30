@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Avenir-Next', sans-serif;
+}
+
+.login-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-container{
+  width: 100%;
+  height: 100vh;
+  padding-left: 67px;
+  padding-top: 106px;
+  background-color: #545F7D05;
+  // border: red 3px solid;
+}
+.image{
+  // border: red 3px solid;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  // margin: 0 auto;
+  margin-top: 139px;
+  // background-color: #545F7D09;
+
+}
+
+
+.logo-image{
+  width: 600px;
+  height: 360px;
+  
+}
+
+.logo{
+  padding-left: 30px;
+}
+
+.form-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  // justify-content: center;
+  padding-left: 100px;
+  padding-top: 220px;
+  // border: blue 2px solid;
+  // border: blue 3px solid;
+}
+
+h1{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54.64px;
+  letter-spacing: -4%;
+  color: #213f7d;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.32px;
+  color: #545f7d;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 24px;
+  // border: red 2px solid;
+}
+
+input {
+  width: 447px;
+  height: 50px;
+  border-radius: 5px;
+  border: #545F7D26 2px solid;
+  padding-left: 16px;
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 60%;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover, input:focus {
+  border-color: #39cdcc;
+  box-shadow: 0px 0px 10px rgba(57, 205, 204, 0.4);  // Adding a soft shadow effect
+  outline: none;  // Removing default outline
+  opacity: 1;  // Making the input fully opaque on hover and focus
+}
+
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.show-password-button {
+  position: absolute;
+  text-transform: uppercase;
+  right: 10px;
+  background: none;
+  border: none;
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  color: #39cdcc;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+p{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.39px;
+  color: #39cdcc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.login-button{
+  width: 447px;
+  height: 48px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background-color: #39cdcc;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 19.12px;
+  font-weight: 500;
+}
+
+.login-button:hover{
+  background-color: transparent;
+  border: 2px solid #39cdcc;
+  cursor: pointer;
+  color: #39cdcc;
+  box-shadow: 0px 0px 10px rgba(57, 205, 204, 0.6); // Adding a nice shadow effect
+  transition: all 0.3s ease-in-out;
+
+}
+//  RESPONSIVENESS  //
+
+
+@media (max-width: 1200px) {
+  .login-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-container, .form-container {
+    width: 100%;
+    height: 50%;
+    padding-left: 20px;
+  }
+
+  .form-container {
+    padding-left: 0;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .login-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 32px;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .form-container {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  // line-height: 54.64px;
+  letter-spacing: -4%;
+  color: #213f7d;
+  margin-bottom: 0;
+  }
+
+  h2{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  // line-height: 27.32px;
+  color: #545f7d;
+}
+
+  .image {
+    margin-top: 20px;
+  }
+
+  .logo{
+    width: 130px;
+    padding-left: 0;
+  }
+
+  .logo-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
+  // border: red 2px solid;
+  }
+
+
+
+  .form-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .password-container {
+    width: 100%;
+  }
+
+
+  .show-password-button {
+  position: absolute;
+  text-transform: uppercase;
+  right: 10px;
+  background: none;
+  border: none;
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  color: #39cdcc;
+  letter-spacing: 1px;
+  align-items: center;
+  }
+
+  p{
+  font-family: 'Avenir-Next', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: #39cdcc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+
+  input {
+    width: 100%;
+    height: 45px;
+    border: 1.5px #545f7d26 solid;
+    border-radius: 10px;
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+
+  .login-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+}
